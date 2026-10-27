@@ -3,33 +3,50 @@ export const profile = {
   role: "Junior Backend Developer",
   location: "Indonesia",
   intro:
-    "Lulusan Teknik Informatika yang berfokus pada pengembangan backend dengan Node.js dan Express.js. Saya merancang RESTful API yang terstruktur, aman, dan mudah dikembangkan, dengan menerapkan autentikasi, validasi data, serta pemisahan lapisan arsitektur. Pemahaman dasar fullstack membantu saya berkolaborasi dengan tim frontend dan memastikan integrasi berjalan lancar. Saya siap berkembang di lingkungan yang menjunjung kualitas kode dan praktik rekayasa perangkat lunak yang baik.",
-  experience: "1 bulan",
-  projectsCompleted: "3+",
-  technologies: ["Node.js", "Express.js", "REST API", "PostgreSQL"],
+    "An Informatics Engineering graduate focused on backend development using Node.js and Express.js. I design structured, secure, and scalable RESTful APIs by implementing robust authentication, data validation, and clean architectural separation. My foundational understanding of full-stack development enables me to collaborate seamlessly with frontend teams and ensure smooth integration. I am eager to grow in an environment that prioritizes code quality and strong software engineering principles.",
+  experience: "1+ month",
+  projectsCompleted: "4+",
+  technologies: [
+    "HTML",
+    "CSS",
+    "JAVASCRIPT",
+    "NODE.JS",
+    "EXPRESS.JS",
+    "REST API",
+    "GIT & GITHUB",
+    ],
   email: "emailanda@example.com",
   github: "https://github.com/username",
   linkedin: "https://linkedin.com/in/username",
 };
 
 export const skills = [
-  "Node.js",
-  "Express.js",
+  "HTML",
+  "CSS",
+  "JAVASCRIPT",
+  "NODE.JS",
+  "EXPRESS.JS",
   "REST API",
-  "JavaScript",
-  "Git & GitHub",
-  "SQL dasar",
-  "React dasar",
+  "GIT & GITHUB",
+  "MYSQL",
+  "BASIC REACT",
+  "BASIC TAILWIND"
 ];
 
 export const projects = [
   {
-    title: "Task Management API",
+    title: "Task Management",
     description:
-      "API untuk membuat dan mengelola tugas dengan autentikasi pengguna.",
-    technologies: ["Node.js", "Express", "PostgreSQL"],
-    status: "Dalam pengembangan",
-    github: "https://github.com/username/task-management-api",
+      "Fullstack Task Manager application built with Express.js, MySQL, and React. Includes JWT authentication and CRUD features for managing tasks.",
+    technologies: ["Javascript", "React.js", "Node.js", "Express", "Jwt-Authentication"],
+    status: "Complete",
+    github: "https://github.com/fazabsharcontact/TaskManagement.git",
+    images: [
+      "/images/taskManagement1.png",
+      "/images/taskManagement2.png",
+      "/images/taskManagement3.png",
+      "/images/taskManagement4.png",
+    ],
   },
   {
     title: "Simple Inventory API",
