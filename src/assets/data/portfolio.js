@@ -42,19 +42,22 @@ export const projects = [
     status: "Complete",
     github: "https://github.com/fazabsharcontact/TaskManagement.git",
     images: [
-      "/images/taskManagement1.png",
-      "/images/taskManagement2.png",
-      "/images/taskManagement3.png",
-      "/images/taskManagement4.png",
+      "/images/project1/taskManagement1.png",
+      "/images/project1/taskManagement2.png",
+      "/images/project1/taskManagement3.png",
+      "/images/project1/taskManagement4.png",
     ],
   },
   {
-    title: "Simple Inventory API",
+    title: "Ticket Booking API",
     description:
-      "REST API sederhana untuk mencatat produk dan mengelola stok.",
-    technologies: ["Node.js", "Express", "SQL"],
+      "A robust Ticket Booking API built with Node.js (Express) and PostgreSQL, engineered to handle intense concurrent requests (ticket war simulation) without double-booking bugs using Database Transactions and Pessimistic Locking (FOR UPDATE).",
+    technologies: ["Javascript", "Node.js", "Express", "PostgreSQL", "Jest", "Supertest", "Zod"],
     status: "Contoh proyek",
-    github: "https://github.com/username/simple-inventory-api",
+    github: "https://github.com/fazabsharcontact/TicketBookingApi.git",
+    images: [
+      "/images/project2/ticketbookingapi1.png",
+    ],
   },
   {
     title: "Portfolio Website",

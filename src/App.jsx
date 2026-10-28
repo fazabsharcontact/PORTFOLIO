@@ -30,7 +30,7 @@ function App() {
           </div>
 
           <img
-            src="/images/profile.png"
+            src="/images/profile2.jpeg"
             alt={`Foto ${profile.name}`}
             className="mx-auto aspect-square w-48 border border-[#2b2c28] object-cover sm:w-full"
           />
@@ -119,7 +119,7 @@ function App() {
                   ))}
                 </div>
 
-                <span className="pointer-events-none absolute bottom-4 left-4 font-mono text-[28px] text-[#c4f36b]">
+                <span className="pointer-events-none absolute bottom-4 left-4 font-mono text-[28px] text-[#191a17]">
                   0{index + 1}
                 </span>
 
@@ -131,7 +131,7 @@ function App() {
               <div className="p-4">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <h3 className="text-base font-semibold">{project.title}</h3>
-                  <span className="text-[10px] text-[#c4f36b]">
+                  <span className="text-[10px] text-white">
                     {project.status}
                   </span>
                 </div>
@@ -152,7 +152,7 @@ function App() {
                 </div>
 
                 <a
-                  className="text-xs text-[#c4f36b]"
+                  className="text-xs text-white"
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
