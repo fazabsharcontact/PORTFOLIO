@@ -15,9 +15,9 @@ export const profile = {
     "REST API",
     "GIT & GITHUB",
     ],
-  email: "emailanda@example.com",
-  github: "https://github.com/username",
-  linkedin: "https://linkedin.com/in/username",
+  email: "fazaabsharcontact@gmail.com",
+  github: "https://github.com/fazabsharcontact",
+  linkedin: "https://www.linkedin.com/in/faza-abshar-a68953341/",
 };
 
 export const skills = [

@@ -166,21 +166,33 @@ function App() {
       </section>
 
       <section className="py-14 sm:py-16" id="contact">
-        <p className="mb-3 font-mono text-[11px] tracking-[0.08em] text-[#c4f36b]">
+        <p className="mb-3 font-mono text-[11px] tracking-[0.08em] text-[#92938d]">
           TERBUKA UNTUK KESEMPATAN
         </p>
-        <h2 className="text-4xl font-bold tracking-[-0.05em] sm:text-[54px]">
-          Mari terhubung.
+        <h2 className="text-3xl font-bold tracking-[-0.05em]">
+          Contact
         </h2>
         <p className="mt-3 max-w-xl text-sm leading-7 text-[#b2b3ac]">
           Saya tertarik dengan kesempatan junior backend developer dan
           kolaborasi proyek.
         </p>
         <a
-          className="mt-5 inline-block rounded border border-[#45483b] px-4 py-3 text-sm text-[#c4f36b]"
+          className="mt-5 inline-block rounded border border-[#45483b] px-4 py-3 text-sm text-[#92938d]"
           href={`mailto:${profile.email}`}
         >
-          {profile.email} ↗
+          {profile.email} 
+        </a>
+        <a
+          className="mt-5 inline-block rounded border border-[#45483b] px-4 py-3 text-sm text-[#92938d]"
+          href={`mailto:${profile.email}`}
+        >
+          {profile.github} 
+        </a>
+        <a
+          className="mt-5 inline-block rounded border border-[#45483b] px-4 py-3 text-sm text-[#92938d]"
+          href={`mailto:${profile.email}`}
+        >
+          {profile.linkedin} 
         </a>
       </section>
 
