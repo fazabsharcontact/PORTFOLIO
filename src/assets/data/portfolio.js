@@ -20,6 +20,13 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/faza-abshar-a68953341/",
 };
 
+export const contacts = {
+  email: "fazaabsharcontact@gmail.com",
+  github: "https://github.com/fazabsharcontact",
+  linkedin: "https://www.linkedin.com/in/faza-abshar-a68953341/",
+  whatsapp: "082213102425",
+};
+
 export const skills = [
   "HTML",
   "CSS",
@@ -91,7 +98,7 @@ export const projects = [
     status: "Complete",
     github: "https://github.com/fazabsharcontact/TicketBookingApi.git",
     images: [
-      "/images/project2/ticketbookingapi1.png",
+      "/images/project4/eCommerce1.png",
     ],
   },
 ];

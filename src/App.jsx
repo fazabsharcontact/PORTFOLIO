@@ -1,4 +1,4 @@
-import { profile, projects, skills } from "./assets/data/portfolio.js";
+import { profile, projects, skills, contacts } from "./assets/data/portfolio.js";
 
 function App() {
   return (
@@ -7,8 +7,8 @@ function App() {
         <a className="brand" href="#home">
           {profile.name.toUpperCase()}
         </a>
-        <a className="top-link" href={`mailto:${profile.email}`}>
-          Contact Me
+        <a className="top-link" href='#contact'>
+          Contact
         </a>
       </header>
       <section
@@ -167,40 +167,54 @@ function App() {
 
       <section className="py-14 sm:py-16" id="contact">
         <p className="mb-3 font-mono text-[11px] tracking-[0.08em] text-[#92938d]">
-          TERBUKA UNTUK KESEMPATAN
+          OPEN TO OPPORTUNITIES
         </p>
         <h2 className="text-3xl font-bold tracking-[-0.05em]">
           Contact
         </h2>
         <p className="mt-3 max-w-xl text-sm leading-7 text-[#b2b3ac]">
-          Saya tertarik dengan kesempatan junior backend developer dan
-          kolaborasi proyek.
+          I'm interested in opportunities as a junior backend developer and
+          collaborative projects.
         </p>
-        <a
-          className="mt-5 inline-block rounded border border-[#45483b] px-4 py-3 text-sm text-[#92938d]"
-          href={`mailto:${profile.email}`}
-        >
-          {profile.email} 
-        </a>
-        <a
-          className="mt-5 inline-block rounded border border-[#45483b] px-4 py-3 text-sm text-[#92938d]"
-          href={`mailto:${profile.email}`}
-        >
-          {profile.github} 
-        </a>
-        <a
-          className="mt-5 inline-block rounded border border-[#45483b] px-4 py-3 text-sm text-[#92938d]"
-          href={`mailto:${profile.email}`}
-        >
-          {profile.linkedin} 
-        </a>
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-2 py-3">
+          <a
+            className="flex min-h-12 items-center gap-2.5 rounded border border-[#2b2c28] bg-[#191a17] px-3.5 text-xs text-[#d5d5ce] hover:text-[#c4f36b]"
+            href={`mailto:${contacts.email}`}
+          >
+            fazaabsharcontact@gmail.com
+          </a>
+
+          <a
+            className="flex min-h-12 items-center gap-2.5 rounded border border-[#2b2c28] bg-[#191a17] px-3.5 text-xs text-[#d5d5ce] hover:text-[#c4f36b]"
+            href={contacts.github}
+            target="_blank"
+            rel="noreferrer"
+          >
+            fazabsharcontact          </a>
+
+          <a
+            className="flex min-h-12 items-center gap-2.5 rounded border border-[#2b2c28] bg-[#191a17] px-3.5 text-xs text-[#d5d5ce] hover:text-[#c4f36b]"
+            href={contacts.linkedin}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Faza Abshar 
+          </a>
+          <a
+            className="flex min-h-12 items-center gap-2.5 rounded border border-[#2b2c28] bg-[#191a17] px-3.5 text-xs text-[#d5d5ce] hover:text-[#c4f36b]"
+            href={contacts.whatsapp}
+            target="_blank"
+            rel="noreferrer"
+          >
+            +62 822-1310-2425 
+          </a>
+        </div>
       </section>
 
-      <footer className="flex flex-wrap justify-between gap-4 border-t border-[#2b2c28] py-6 text-[11px] text-[#92938d]">
+      <footer className="justify-center flex flex-wrap gap-4 border-t border-[#2b2c28] py-6 text-[11px] text-[#92938d]">
         <span>
-          © {new Date().getFullYear()} {profile.name}
+          © {new Date().getFullYear()} fazaabsharcontact
         </span>
-        <span>Dibuat dengan React</span>
       </footer>
     </main>
   );
