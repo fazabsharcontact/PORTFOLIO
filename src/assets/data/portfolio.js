@@ -53,18 +53,45 @@ export const projects = [
     description:
       "A robust Ticket Booking API built with Node.js (Express) and PostgreSQL, engineered to handle intense concurrent requests (ticket war simulation) without double-booking bugs using Database Transactions and Pessimistic Locking (FOR UPDATE).",
     technologies: ["Javascript", "Node.js", "Express", "PostgreSQL", "Jest", "Supertest", "Zod"],
-    status: "Contoh proyek",
+    status: "Complete",
     github: "https://github.com/fazabsharcontact/TicketBookingApi.git",
     images: [
       "/images/project2/ticketbookingapi1.png",
     ],
   },
   {
-    title: "Portfolio Website",
+    title: "Employee Management PT. INOVINDO (Dummy Data)",
     description:
-      "Website portfolio responsif untuk menampilkan profil dan proyek.",
-    technologies: ["React", "Vite", "CSS"],
-    status: "Contoh proyek",
-    github: "https://github.com/username/backend-portfolio",
+      "A Laravel-based employee management application for PT. INOVINDO, featuring modules for personnel management, attendance, payroll, assignments, announcements, leave, and performance reporting.",
+    technologies: ["PHP", "Laravel", "TailwindCSS"],
+    status: "Complete",
+    github: "https://github.com/fazabsharcontact/INOVINDO-EmployeeManagement.git",
+    images: [
+      "/images/project3/employeeManagement1.png",
+      "/images/project3/employeeManagement2.png",
+      "/images/project3/employeeManagement3.png",
+      "/images/project3/employeeManagement4.png",
+      "/images/project3/employeeManagement5.png",
+      "/images/project3/employeeManagement6.png",
+      "/images/project3/employeeManagement7.png",
+      "/images/project3/employeeManagement8.png",
+      "/images/project3/employeeManagement9.png",
+      "/images/project3/employeeManagement10.png",
+      "/images/project3/employeeManagement11.png",
+      "/images/project3/employeeManagement12.png",
+      "/images/project3/employeeManagement13.png",
+      "/images/project3/employeeManagement14.png",
+    ],
+  },
+  {
+    title: "e-Commerce (backend only)",
+    description:
+      "",
+    technologies: ["Javascript", "Node.js", "Express", "PostgreSQL", "Jest", "Supertest", "Zod"],
+    status: "Complete",
+    github: "https://github.com/fazabsharcontact/TicketBookingApi.git",
+    images: [
+      "/images/project2/ticketbookingapi1.png",
+    ],
   },
 ];
