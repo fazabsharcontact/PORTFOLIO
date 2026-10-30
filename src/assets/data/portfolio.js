@@ -95,7 +95,7 @@ export const projects = [
     description:
       "",
     technologies: ["Javascript", "Node.js", "Express", "PostgreSQL", "Jest", "Supertest", "Zod"],
-    status: "Complete",
+    status: "Active",
     github: "https://github.com/fazabsharcontact/TicketBookingApi.git",
     images: [
       "/images/project4/eCommerce1.png",

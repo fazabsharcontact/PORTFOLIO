@@ -181,7 +181,8 @@ function App() {
             className="flex min-h-12 items-center gap-2.5 rounded border border-[#2b2c28] bg-[#191a17] px-3.5 text-xs text-[#d5d5ce] hover:text-[#c4f36b]"
             href={`mailto:${contacts.email}`}
           >
-            fazaabsharcontact@gmail.com
+            <img src="/images/icons/mail.png" alt="github.icon" aria-hidden="true" className="size-5 object-contain" />
+            <span>fazaabsharcontact@gmail.com</span>
           </a>
 
           <a
@@ -190,7 +191,9 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            fazabsharcontact          </a>
+            <img src="/images/icons/github.png" alt="github.icon" aria-hidden="true" className="size-5 object-contain" />
+            <span>fazabsharcontact</span>          
+          </a>
 
           <a
             className="flex min-h-12 items-center gap-2.5 rounded border border-[#2b2c28] bg-[#191a17] px-3.5 text-xs text-[#d5d5ce] hover:text-[#c4f36b]"
@@ -198,7 +201,8 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            Faza Abshar 
+            <img src="/images/icons/linkedin.png" alt="github.icon" aria-hidden="true" className="size-5 object-contain" />
+            <span>Faza Abshar</span> 
           </a>
           <a
             className="flex min-h-12 items-center gap-2.5 rounded border border-[#2b2c28] bg-[#191a17] px-3.5 text-xs text-[#d5d5ce] hover:text-[#c4f36b]"
@@ -206,7 +210,8 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            +62 822-1310-2425 
+            <img src="/images/icons/whatsapp.png" alt="github.icon" aria-hidden="true" className="size-5 object-contain" />
+            <span>+62 822-1310-2425</span> 
           </a>
         </div>
       </section>
