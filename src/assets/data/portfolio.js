@@ -91,14 +91,25 @@ export const projects = [
     ],
   },
   {
+    title: "Multi-agent System (Analysis, Refactoring, Evaluate)",
+    description:
+      "An LLM-powered multi-agent system for analyzing, refactoring, and evaluating software codebases directly from GitHub repositories, featuring AI-driven code analysis, architectural improvements, and human-in-the-loop validation.",
+    technologies: ["Multi-agent", "LLM", "Analysis", "Refactoring", "Evaluate", "Python"],
+    status: "Complete",
+    github: "https://github.com/fazabsharcontact/ai-multi-agent-code-refactoring.git",
+    images: [
+      "/images/project4/multiAgent.png",
+    ],
+  },
+  {
     title: "e-Commerce (backend only)",
     description:
       "",
     technologies: ["Javascript", "Node.js", "Express", "PostgreSQL", "Jest", "Supertest", "Zod"],
     status: "Active",
-    github: "https://github.com/fazabsharcontact/TicketBookingApi.git",
+    github: "https://github.com/fazabsharcontact/eCommerceBackendOnly.git",
     images: [
-      "/images/project4/eCommerce1.png",
+      "/images/project5/eCommerce1.png",
     ],
   },
 ];
