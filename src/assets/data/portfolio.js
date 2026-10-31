@@ -1,6 +1,6 @@
 export const profile = {
   name: "FAZA ABSHAR",
-  role: "Junior Backend Developer",
+  role: "Junior Backend Developer | Full-Stack Developer",
   location: "Indonesia",
   intro:
     "An Informatics Engineering graduate focused on backend development using Node.js and Express.js. I design structured, secure, and scalable RESTful APIs by implementing robust authentication, data validation, and clean architectural separation. My foundational understanding of full-stack development enables me to collaborate seamlessly with frontend teams and ensure smooth integration. I am eager to grow in an environment that prioritizes code quality and strong software engineering principles.",
@@ -44,7 +44,7 @@ export const projects = [
   {
     title: "Task Management",
     description:
-      "Fullstack Task Manager application built with Express.js, MySQL, and React. Includes JWT authentication and CRUD features for managing tasks.",
+      "Fullstack Task Manager application built with Express.js, MySQL, and React. Includes JWT authentication and Create Delete features for managing tasks.",
     technologies: ["Javascript", "React.js", "Node.js", "Express", "Jwt-Authentication"],
     status: "Complete",
     github: "https://github.com/fazabsharcontact/TaskManagement.git",
