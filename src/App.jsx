@@ -157,7 +157,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Lihat repository ↗
+                  Lihat repository
                 </a>
               </div>
             </article>
