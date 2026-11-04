@@ -1,6 +1,6 @@
 export const profile = {
   name: "FAZA ABSHAR",
-  role: "Junior Full-Stack Developer | Software Engineering",
+  role: "Junior Full-Stack Developer | Software Engineer",
   location: "Indonesia",
   intro:
     "An Informatics Engineering graduate focused on backend development using Node.js and Express.js. I design structured, secure, and scalable RESTful APIs by implementing robust authentication, data validation, and clean architectural separation. My foundational understanding of full-stack development enables me to collaborate seamlessly with frontend teams and ensure smooth integration. I am eager to grow in an environment that prioritizes code quality and strong software engineering principles.",
