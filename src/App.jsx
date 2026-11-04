@@ -173,8 +173,7 @@ function App() {
           Contact
         </h2>
         <p className="mt-3 max-w-xl text-sm leading-7 text-[#b2b3ac]">
-          I'm interested in opportunities as a junior backend developer and
-          collaborative projects.
+         I'm open to junior full-stack developer and software engineering opportunities, as well as collaborative projects.
         </p>
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-2 py-3">
           <a

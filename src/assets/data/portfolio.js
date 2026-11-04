@@ -3,7 +3,7 @@ export const profile = {
   role: "Junior Full-Stack Developer | Software Engineer",
   location: "Indonesia",
   intro:
-    "An Informatics Engineering graduate focused on backend development using Node.js and Express.js. I design structured, secure, and scalable RESTful APIs by implementing robust authentication, data validation, and clean architectural separation. My foundational understanding of full-stack development enables me to collaborate seamlessly with frontend teams and ensure smooth integration. I am eager to grow in an environment that prioritizes code quality and strong software engineering principles.",
+    "An Informatics Engineering graduate with internship experience in full-stack web development and a strong interest in software engineering. I build web applications using React.js, Tailwind CSS, Laravel, Node.js, and Express.js, and work with RESTful APIs, JWT authentication, and relational databases. My experience includes refactoring PHP modules into Laravel, applying Clean Code and SOLID principles, and developing a multi-agent AI system to support code analysis, refactoring, and software quality evaluation. I also have experience designing user interfaces with UI/UX considerations. I value clear communication, teamwork, and continuous learning, and aim to build reliable, maintainable software.",
   experience: "1+ month",
   projectsCompleted: "4+",
   technologies: [
@@ -31,13 +31,16 @@ export const skills = [
   "HTML",
   "CSS",
   "JAVASCRIPT",
+  "PHP",
   "NODE.JS",
   "EXPRESS.JS",
+  "LARAVEL",
   "REST API",
   "GIT & GITHUB",
   "MYSQL",
-  "BASIC REACT",
-  "BASIC TAILWIND"
+  "POSTGRESQL",
+  "REACT.JS",
+  "TAILWIND CSS"
 ];
 
 export const projects = [
