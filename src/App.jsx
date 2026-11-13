@@ -37,7 +37,7 @@ function App() {
         </div>
 
         <div
-          className="grid grid-cols-3 justify-items-center text-center gap-3 border-y border-[#2b2c28] py-7 sm:gap-6"
+          className="grid grid-cols-2 justify-items-center text-center gap-3 border-y border-[#2b2c28] py-7 sm:gap-6"
           aria-label="Ringkasan"
         >
           <div className="grid content-start gap-2">
@@ -45,7 +45,16 @@ function App() {
               {profile.experience}
             </strong>
             <span className="text-xs leading-relaxed text-[#92938d]">
-              Internship Experience
+              academic, personal & internship projects
+            </span>
+          </div>
+          
+          <div className="grid content-start gap-2">
+            <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
+              {profile.workExperience}
+            </strong>
+            <span className="text-xs leading-relaxed text-[#92938d]">
+              Fullstack Developer Intern at PT. INOVINDO Digital Media
             </span>
           </div>
 
