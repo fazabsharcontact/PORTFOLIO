@@ -29,19 +29,18 @@ export const contacts = {
 };
 
 export const skills = [
-  "HTML",
-  "CSS",
-  "JAVASCRIPT",
-  "PHP",
-  "NODE.JS",
-  "EXPRESS.JS",
-  "LARAVEL",
-  "REST API",
-  "GIT & GITHUB",
-  "MYSQL",
-  "POSTGRESQL",
-  "REACT.JS",
-  "TAILWIND CSS"
+  { name: "HTML", icon: "/images/tech/HTML5.png" },
+  { name: "CSS", icon: "/images/tech/CSS3.png" },
+  { name: "JAVASCRIPT", icon: "/images/tech/JavaScript.png" },
+  { name: "PHP", icon: "/images/tech/PHP.png" },
+  { name: "NODE.JS", icon: "/images/tech/Node.js.png" },
+  { name: "EXPRESS.JS", icon: "/images/tech/Express.png" },
+  { name: "LARAVEL", icon: "/images/tech/Laravel.png" },
+  { name: "GIT & GITHUB", icon: "/images/tech/GitHub.png" },
+  { name: "MYSQL", icon: "/images/tech/MySQL.png" },
+  { name: "POSTGRESQL", icon: "/images/tech/PostgresSQL.png" },
+  { name: "REACT.JS", icon: "/images/tech/React.png" },
+  { name: "TAILWIND CSS", icon: "/images/tech/Tailwind CSS.png" },
 ];
 
 export const projects = [

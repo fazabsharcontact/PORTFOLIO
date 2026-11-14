@@ -1,9 +1,20 @@
 @import "tailwindcss";
 
+@theme {
+  --color-section1-bg: #ffffff;
+
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+}
+
 :root {
   font-family: "Manrope", sans-serif;
   color: #f3f1ec;
-  background: #000000;
+  background: #efefef;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
