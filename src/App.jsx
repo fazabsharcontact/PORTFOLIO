@@ -69,6 +69,29 @@ function App() {
               Show More.
             </a>
           </div>
+
+          <div
+            className="grid grid-cols-2 justify-items-center text-center gap-3 border-y border-[#2b2c28] py-7 sm:gap-6"
+            aria-label="Ringkasan"
+          >
+            <div className="grid content-start gap-2">
+              <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
+                {profile.projectsCompleted}
+              </strong>
+              <span className="text-xs leading-relaxed text-[#92938d]">
+                Portfolio Project 
+              </span>
+            </div>
+
+            <div className="grid content-start gap-2">
+              <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
+                {profile.technologies.length}
+              </strong>
+              <span className="text-xs leading-relaxed text-[#92938d]">
+                Tech
+              </span>
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -182,10 +205,14 @@ function App() {
 
        <section
         id="home"
-        className="flex min-h-screen flex-col justify-between py-16 sm:py-24 relative z-30 rounded-b-[3rem] bg-[#efefef]"
+        className="relative z-30 flex min-h-screen flex-col justify-between overflow-hidden rounded-b-[3rem] bg-black py-16 text-white sm:py-24"
       >
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_85%_80%,rgba(0,180,216,0.25),transparent_70%),radial-gradient(ellipse_50%_40%_at_10%_10%,rgba(0,180,216,0.10),transparent_70%),radial-gradient(ellipse_45%_45%_at_0%_0%,rgba(0,180,216,0.25),transparent_70%)]"
+        />
         <Container>
-          <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-[1fr_220px] py-20 text-black" id="profile">
+          <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-[1fr_220px] py-20 text-white" id="profile">
             <div>
               <h1 className="text-4xl font-extrabold tracking-[-0.07em]">
                 {profile.name}
@@ -201,12 +228,12 @@ function App() {
             <img
               src="/profil.png"
               alt={`Foto ${profile.name}`}
-              className="mx-auto aspect-square w-48 border border-[#2b2c28] object-cover sm:w-full"
+              className="mx-auto aspect-square w-48 object-cover sm:w-full"
             />
           </div>
 
           <div
-            className="grid grid-cols-2 justify-items-center text-center text-black gap-3 border-y border-[#2b2c28] py-7 sm:gap-6"
+            className="grid grid-cols-2 justify-items-center text-center gap-3 border-y border-[#2b2c28] py-7 sm:gap-6"
             aria-label="Ringkasan"
           >
             <div className="grid content-start gap-2">
@@ -253,7 +280,7 @@ function App() {
           <p className="mb-3 font-mono text-[11px] tracking-[0.08em] text-[#92938d]">
             OPEN TO OPPORTUNITIES
           </p>
-          <h2 className="text-3xl font-bold tracking-[-0.05em]">
+          <h2 className="text-3xl font-bold tracking-[-0.05em] text-black">
             Contact
           </h2>
           <p className="mt-3 max-w-xl text-sm leading-7 text-[#b2b3ac]">
