@@ -4,81 +4,70 @@ import Container from "./components/Container.jsx";
 function App() {
   return (
     <main>
-      <header className="topbar top-0 z-50 bg-[#efefef] py-3 text-sm text-black backdrop-blur-md">
+      <header className="sticky top-3 z-50 mx-3 mt-3 rounded-3xl bg-[#efefef]/90 py-3 text-xs text-black shadow-sm backdrop-blur-md sm:mx-6">
         <Container className="flex items-center justify-between">
-          <a className="brand" href="#home">
-          {profile.name.toUpperCase()}
-          </a>
-          <a className="top-link" href='#contact'>
-            Contact
-          </a>
+          <div className="flex items-center gap-2">
+            <a href={`mailto:${contacts.email}`} className="hidden sm:block">
+              {contacts.email}
+            </a>
+
+            <a
+              href={`mailto:${contacts.email}`}
+              className="rounded-full bg-white px-5 py-2 font-medium shadow-sm"
+            >
+              Email
+            </a>
+
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full bg-white px-5 py-2 font-medium shadow-sm"
+            >
+              CV
+            </a>
+          </div>
+
+          <nav className="flex items-center gap-2">
+            <a href={contacts.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+            <span aria-hidden="true">/</span>
+            <a href={contacts.github} target="_blank" rel="noreferrer">GitHub</a>
+            <span aria-hidden="true">/</span>
+            <a href="#contact">Contact</a>
+          </nav>
         </Container>
       </header>
 
       <section
         id="home"
-        className="flex min-h-screen flex-col justify-between py-16 sm:py-24 relative z-30 rounded-b-[3rem] bg-[#efefef]"
+        className="relative z-30 flex min-h-screen flex-col justify-between overflow-hidden rounded-b-[3rem] bg-black py-16 text-white sm:py-24"
       >
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_15%_85%,rgba(0,180,216,0.55),transparent_70%),radial-gradient(ellipse_50%_40%_at_50%_0%,rgba(0,180,216,0.25),transparent_70%)]"
+        />
         <Container>
-          <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-[1fr_220px] py-20 text-black">
-            <div>
-              <h1 className="text-4xl font-extrabold tracking-[-0.07em]">
-                {profile.name}
-              </h1>
-
-              <h2 className="mb-3 mt-5 text-xl font-semibold">{profile.role}</h2>
-
-              <p className="max-w-[590px] text-justify text-[15px] leading-8 text-[#a3a3a1]">
-                {profile.intro}
-              </p>
+          <div className="flex flex-col items-center gap-6 py-20 text-center text-white">
+            <div className="relative">
+              <img
+                src="/profil.png"
+                alt={`Foto ${profile.name}`}
+                className="size-25 rounded-full object-cover sm:size-30"
+              />
             </div>
 
-            <img
-              src="/profil.png"
-              alt={`Foto ${profile.name}`}
-              className="mx-auto aspect-square w-48 border border-[#2b2c28] object-cover sm:w-full"
-            />
-          </div>
+            <h1 className="max-w-2xl text-4xl font-extrabold tracking-[-0.05em] sm:text-5xl">
+              {profile.role}
+              <br />
+              <span className="text-neutral-500">{profile.subRole}</span>
+            </h1>
 
-          <div
-            className="grid grid-cols-2 justify-items-center text-center text-black gap-3 border-y border-[#2b2c28] py-7 sm:gap-6"
-            aria-label="Ringkasan"
-          >
-            <div className="grid content-start gap-2">
-              <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
-                {profile.experience}
-              </strong>
-              <span className="text-xs leading-relaxed text-[#92938d]">
-                academic, personal & internship projects
-              </span>
-            </div>
-            
-            <div className="grid content-start gap-2">
-              <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
-                {profile.workExperience}
-              </strong>
-              <span className="text-xs leading-relaxed text-[#92938d]">
-                Fullstack Developer Intern at PT. INOVINDO Digital Media
-              </span>
-            </div>
-
-            <div className="grid content-start gap-2">
-              <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
-                {profile.projectsCompleted}
-              </strong>
-              <span className="text-xs leading-relaxed text-[#92938d]">
-                Portfolio Project 
-              </span>
-            </div>
-
-            <div className="grid content-start gap-2">
-              <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
-                {profile.technologies.length}
-              </strong>
-              <span className="text-xs leading-relaxed text-[#92938d]">
-                Tech
-              </span>
-            </div>
+            <a
+              href="#profile"
+              className="rounded-full bg-white px-6 py-3 text-xs font-medium text-black"
+            >
+              Show More.
+            </a>
           </div>
         </Container>
       </section>
@@ -115,7 +104,7 @@ function App() {
       </section>
 
       <section
-        className="border-b border-[#2b2c28] py-14 sm:py-16 bg-[#efefef] relative z-10 -mt-12"
+        className="py-14 sm:py-16 bg-[#efefef] relative z-10 -mt-12"
         id="projects"
       >
         <Container>
@@ -191,7 +180,75 @@ function App() {
         </Container>
       </section>
 
-      <section className="py-14 sm:py-16" id="contact">
+       <section
+        id="home"
+        className="flex min-h-screen flex-col justify-between py-16 sm:py-24 relative z-30 rounded-b-[3rem] bg-[#efefef]"
+      >
+        <Container>
+          <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-[1fr_220px] py-20 text-black" id="profile">
+            <div>
+              <h1 className="text-4xl font-extrabold tracking-[-0.07em]">
+                {profile.name}
+              </h1>
+
+              <h2 className="mb-3 mt-5 text-xl font-semibold">{profile.profile}</h2>
+
+              <p className="max-w-[590px] text-justify text-[15px] leading-8 text-[#a3a3a1]">
+                {profile.intro}
+              </p>
+            </div>
+
+            <img
+              src="/profil.png"
+              alt={`Foto ${profile.name}`}
+              className="mx-auto aspect-square w-48 border border-[#2b2c28] object-cover sm:w-full"
+            />
+          </div>
+
+          <div
+            className="grid grid-cols-2 justify-items-center text-center text-black gap-3 border-y border-[#2b2c28] py-7 sm:gap-6"
+            aria-label="Ringkasan"
+          >
+            <div className="grid content-start gap-2">
+              <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
+                {profile.experience}
+              </strong>
+              <span className="text-xs leading-relaxed text-[#92938d]">
+                academic, personal & internship projects
+              </span>
+            </div>
+            
+            <div className="grid content-start gap-2">
+              <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
+                {profile.workExperience}
+              </strong>
+              <span className="text-xs leading-relaxed text-[#92938d]">
+                Fullstack Developer Intern at PT. INOVINDO Digital Media
+              </span>
+            </div>
+
+            <div className="grid content-start gap-2">
+              <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
+                {profile.projectsCompleted}
+              </strong>
+              <span className="text-xs leading-relaxed text-[#92938d]">
+                Portfolio Project 
+              </span>
+            </div>
+
+            <div className="grid content-start gap-2">
+              <strong className="text-2xl tracking-[-0.06em] sm:text-[28px]">
+                {profile.technologies.length}
+              </strong>
+              <span className="text-xs leading-relaxed text-[#92938d]">
+                Tech
+              </span>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-14 sm:py-16 bg-white rounded-t-[3rem]" id="contact">
         <Container>
           <p className="mb-3 font-mono text-[11px] tracking-[0.08em] text-[#92938d]">
             OPEN TO OPPORTUNITIES
@@ -243,7 +300,7 @@ function App() {
         </Container>
       </section>
 
-      <footer className="justify-center flex flex-wrap gap-4 border-t border-[#2b2c28] py-6 text-[11px] text-[#92938d]">
+      <footer className="justify-center flex flex-wrap gap-4 py-6 text-[11px] text-[#92938d] bg-white">
         <Container>
           <span>
             © {new Date().getFullYear()} fazaabsharcontact

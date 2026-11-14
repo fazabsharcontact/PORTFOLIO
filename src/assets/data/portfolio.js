@@ -1,6 +1,8 @@
 export const profile = {
   name: "FAZA ABSHAR",
-  role: "Junior Full-Stack Developer | Software Engineer",
+  role: "Junior Full-Stack Developer",
+  subRole: "Software Engineer",
+  profile: "Junior Full-Stack Developer | Software Engineer",
   location: "Indonesia",
   intro:
     "An Informatics Engineering graduate with internship experience in full-stack web development and a strong interest in software engineering. I build web applications using React.js, Tailwind CSS, Laravel, Node.js, and Express.js, and work with RESTful APIs, JWT authentication, and relational databases. My experience includes refactoring PHP modules into Laravel, applying Clean Code and SOLID principles, and developing a multi-agent AI system to support code analysis, refactoring, and software quality evaluation. I also have experience designing user interfaces with UI/UX considerations. I value clear communication, teamwork, and continuous learning, and aim to build reliable, maintainable software.",
