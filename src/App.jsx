@@ -34,7 +34,7 @@ function App() {
             </a>
 
             <a
-              href="/cv.pdf"
+              href="https://drive.google.com/drive/folders/1atUsj9g-SZIc5rLnxxqLBADeu41RkfOE?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="rounded-full border border-white/20 bg-white/15 px-5 py-2 font-medium transition hover:bg-white/25"

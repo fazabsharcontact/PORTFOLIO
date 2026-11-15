@@ -25,7 +25,7 @@ export const profile = {
     ],
   email: "fazaabsharcontact@gmail.com",
   github: "https://github.com/fazabsharcontact",
-  linkedin: "https://www.linkedin.com/in/faza-abshar-a68953341/",
+  linkedin: "https://www.linkedin.com/in/fazabshar/",
 };
 
 export const contacts = {
