@@ -55,7 +55,7 @@ function App() {
 
       <section
         id="home"
-        className="relative z-30 flex min-h-screen flex-col justify-between overflow-hidden rounded-b-[3rem] bg-black py-16 text-white sm:py-24"
+        className="relative z-30 flex min-h-[calc(100svh+3rem)] flex-col justify-between overflow-hidden rounded-b-[3rem] bg-black py-16 text-white sm:py-24"
       >
         <div
           aria-hidden="true"
@@ -280,7 +280,7 @@ function App() {
             <img
               src="/profil.png"
               alt={`Foto ${profile.name}`}
-              className="mx-auto aspect-square w-48 object-cover sm:w-full"
+              className="mx-auto aspect-square w-48 rounded object-cover sm:w-full"
             />
           </div>
 
